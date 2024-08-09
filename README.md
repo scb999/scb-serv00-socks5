@@ -1,4 +1,5 @@
 ## serv00-socks5<br>
+给 serv00 一键安装 socks5 & nezha-agent
 #### ▶ 一键安装代码
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/scb999/scb-serv00-socks5/main/install-socks5.sh)
