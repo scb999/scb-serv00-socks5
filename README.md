@@ -2,6 +2,7 @@
 ### ▶ 一键安装代码
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/scb999/scb-serv00-socks5/main/install-socks5.sh)
+<br>
 ### ▶ 查看保活crontab任务，若未安装保活，则忽略此操作。
 ```bash
 crontab -l
