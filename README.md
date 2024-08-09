@@ -3,9 +3,9 @@
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/scb999/scb-serv00-socks5/main/install-socks5.sh)
 ````
-#### ▶ 查看保活crontab任务，若未安装保活，则忽略此操作。
+#### ▶ 查看保活任务，若未安装保活，则忽略此操作。
 ```bash
-crontab -l
+crontab -e
 ````
 上面命令完会显示下面信息就是有保活设置成功
 ```bash
@@ -24,3 +24,8 @@ pgrep -f 's5' | xargs -r kill
 rm -rf ~/.s5
 ````
 
+#### 其它说明：
+一键卸载pm2
+```bash
+pm2 unstartup && pm2 delete all && npm uninstall -g pm2
+````
