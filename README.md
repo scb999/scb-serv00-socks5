@@ -8,8 +8,12 @@ bash <(curl -s https://raw.githubusercontent.com/scb999/scb-serv00-socks5/main/i
 pgrep -f 's5' | xargs -r kill
 rm -rf ~/.s5
 ````
+#### ▶ 停止socks5代理服务
+```bash
+pm2 stop socks_proxy
+````
 
-#### ▶ 其它说明：
+#### 其它说明
 一键卸载pm2
 ```bash
 pm2 unstartup && pm2 delete all && npm uninstall -g pm2
@@ -17,10 +21,6 @@ pm2 unstartup && pm2 delete all && npm uninstall -g pm2
 查看代理的运行状态(在socks5.js所在目录下运行)
 ```bash
 pm2 status
-````
-停止socks5代理服务
-```bash
-pm2 stop socks_proxy
 ````
 给脚本赋予运行权限
 ```bash
