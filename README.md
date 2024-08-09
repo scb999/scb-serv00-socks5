@@ -1,4 +1,4 @@
-# scb-serv00-socks5
+serv00-socks5
 
 一键安装代码
 ```bash
